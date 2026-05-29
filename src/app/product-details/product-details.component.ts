@@ -22,4 +22,14 @@ export class ProductDetailsComponent {
       discount: 0.2
     };
   }
+
+  getImageUrl(product: IProduct): string {
+    return '/images/robot-parts/' + product.imageName;
+  }
+
+  addToCart(product: IProduct, event: MouseEvent): void {
+    product.name += ' (added to cart)';
+    console.log(event);
+  }
+
 }
