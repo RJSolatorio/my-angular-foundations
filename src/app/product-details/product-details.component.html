@@ -1,6 +1,6 @@
-<div class="product">
-    <img [src]="getImageUrl(product())" [alt]="product().name" />
+
     <div class="details">
+        <img [src]="getImageUrl(product())" [alt]="product().name" />
         <div>
             <h2>{{ product().name }}</h2>
             <p>{{ product().description }}</p>
@@ -15,4 +15,3 @@
         }      
         <button class="cta" (click)="addToCart($event)">Buy</button>
     </div>
-</div>
